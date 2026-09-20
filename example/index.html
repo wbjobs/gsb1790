@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Managed IndexedDB acceptance demo</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 2rem; }
+  button { margin-right: .5rem; padding: .5rem .75rem; }
+  pre { background: #f4f4f5; border-radius: 8px; padding: .75rem; white-space: pre-wrap; }
+</style>
+<h1>Managed IndexedDB</h1>
+<p>Schema migration, snapshot rollback, transactional batch writes and Worker isolation.</p>
+<button id="open">Open / migrate</button>
+<button id="write">Atomic batch write</button>
+<button id="atomic">Fail after write</button>
+<button id="read">Read snapshot</button>
+<button id="reset">Reset databases</button>
+<div id="output"></div>
+<script type="module" src="./app.js"></script>

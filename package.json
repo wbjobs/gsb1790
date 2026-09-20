@@ -1,0 +1,23 @@
+{
+  "name": "managed-indexeddb",
+  "version": "1.0.0",
+  "description": "Schema-migrating, transactional and recoverable IndexedDB client backed by a Web Worker.",
+  "type": "module",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./worker": "./src/worker-entry.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "serve": "python3 -m http.server 5173"
+  },
+  "keywords": [
+    "indexeddb",
+    "web-worker",
+    "migration",
+    "transaction"
+  ],
+  "license": "MIT"
+}
