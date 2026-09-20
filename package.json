@@ -1,0 +1,22 @@
+{
+  "name": "worker-indexeddb",
+  "version": "1.0.0",
+  "description": "Schema-migrating, transactional IndexedDB access from a Web Worker.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./worker": "./src/worker-host.js",
+    "./client": "./src/worker-client.js"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "keywords": [
+    "indexeddb",
+    "web-worker",
+    "migration",
+    "transaction"
+  ],
+  "license": "MIT"
+}
